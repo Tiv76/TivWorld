@@ -29,7 +29,7 @@ private:
 	sf::Texture myTexture;
 	sf::IntRect mySubRect;
 
-	// Attributs the animation of the character
+	// Attributs for the animation of the character
 	int myStep = 0;
 	int myStepMax;
 

@@ -2,6 +2,7 @@
 
 #include "Level.h"
 #include "Character.h"
+#include "CollisionManager.h"
 
 using namespace sf;
 using namespace std;
@@ -19,6 +20,7 @@ int main()
 	Level level = Level(2);
 
 	Character tiv("Tiv", Vector2f(400, 300));
+	CollisionManager colTiv(tiv, level);
 
 	// Initialization of the main Window
 	RenderWindow app(VideoMode(TILE_WIDTH * NUMBER_BLOCS_WIDTH, TILE_HEIGHT * NUMBER_BLOCS_HEIGHT, 32), "Tiv's World");
@@ -58,6 +60,18 @@ int main()
 				break;
 			}
 		}
+
+		if (Keyboard::isKeyPressed(Keyboard::Up) && colTiv.CollisionTest(Character::up))
+			tiv.Move(Character::up);
+
+		if (Keyboard::isKeyPressed(Keyboard::Down) && colTiv.CollisionTest(Character::down))
+			tiv.Move(Character::down);
+
+		if (Keyboard::isKeyPressed(Keyboard::Left) && colTiv.CollisionTest(Character::left))
+			tiv.Move(Character::left);
+
+		if (Keyboard::isKeyPressed(Keyboard::Right) && colTiv.CollisionTest(Character::right))
+			tiv.Move(Character::right);
 
 		// Clear screen
 		app.clear();
