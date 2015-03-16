@@ -4,13 +4,13 @@ Robot1 100 75
 pictures/tileset.bmp
 14 7
 25 25
-tile0 herbe tile1 herbe tile2 rocher tile3 rocher tile4 haut tile5 bas tile6 buisson tile7 mur tile8 maison tile9 maison tile10 maison tile11 maison tile12 maison tile13 maison
-tile14 rien tile15 rien tile16 rocher tile17 rocher tile18 gauche tile19 droite tile20 rien tile21 rien tile22 maison tile23 maison tile24 maison tile25 maison tile26 maison tile27 maison
-tile28 riveHG tile29 riveH tile30 riveH tile31 riveHG tile32 rien tile33 rien tile34 rien tile35 rien tile36 maison tile37 maison tile38 maison tile39 maison tile40 maison tile41 maison
-tile42 riveG tile43 eau tile44 eau tile45 riveD tile46 rien tile47 rien tile48 rien tile49 rien tile50 maison tile51 maison tile52 maison tile53 maison tile54 maison tile55 maison
-tile56 riveBG tile57 riveB tile58 riveB tile59 riveBD tile60 rien tile61 rien tile62 rien tile63 rien tile64 maison tile65 maison tile66 maison tile67 maison tile68 maison tile69 maison
-tile70 paroie tile71 paroie tile72 paroie tile73 paroie tile74 rien tile75 rien tile76 rien tile77 rien tile78 maison tile79 maison tile80 maison tile81 maison tile82 maison tile83 maison
-tile84 eau tile85 eau tile86 eau tile87 eau tile88 rien tile89 rien tile90 rien tile91 rien tile92 rien tile93 rien tile94 seuil tile95 seuil tile96 rien tile97 rien
+tile0 grass tile1 grass tile2 rock tile3 rock tile4 up tile5 down tile6 bush tile7 wall tile8 house tile9 house tile10 house tile11 house tile12 house tile13 house
+tile14 empty tile15 empty tile16 rock tile17 rock tile18 left tile19 right tile20 empty tile21 empty tile22 house tile23 house tile24 house tile25 house tile26 house tile27 house
+tile28 shoreUL tile29 shoreU tile30 shoreU tile31 shoreUR tile32 empty tile33 empty tile34 empty tile35 empty tile36 house tile37 house tile38 house tile39 house tile40 house tile41 house
+tile42 shoreL tile43 water tile44 water tile45 shoreR tile46 empty tile47 empty tile48 empty tile49 empty tile50 house tile51 house tile52 house tile53 house tile54 house tile55 house
+tile56 shoreDL tile57 shoreD tile58 shoreD tile59 shoreDR tile60 empty tile61 empty tile62 empty tile63 empty tile64 house tile65 house tile66 house tile67 house tile68 house tile69 house
+tile70 wall tile71 wall tile72 wall tile73 wall tile74 empty tile75 empty tile76 empty tile77 empty tile78 house tile79 house tile80 door tile81 door tile82 house tile83 house
+tile84 water tile85 water tile86 water tile87 water tile88 empty tile89 empty tile90 empty tile91 empty tile92 empty tile93 empty tile94 threshold tile95 threshold tile96 empty tile97 empty
 32 20
  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7
  7  0  0  0  0  0  0  6  0  0  0  0  6  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  7
