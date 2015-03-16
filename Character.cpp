@@ -63,6 +63,11 @@ const Sprite & Character::GetSprite() const
 	return mySprite;
 }
 
+const string Character::GetType() const
+{
+	return myType;
+}
+
 //############ Private functions ############
 
 void Character::SetCharacter(string type)

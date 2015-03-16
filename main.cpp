@@ -3,6 +3,7 @@
 #include "Level.h"
 #include "Character.h"
 #include "CollisionManager.h"
+#include "ExitManager.h"
 
 using namespace sf;
 using namespace std;
@@ -20,7 +21,8 @@ int main()
 	Level level = Level(2);
 
 	Character tiv("Tiv", Vector2f(400, 300));
-	CollisionManager colTiv(tiv, level);
+	CollisionManager tivCol(tiv, level);
+	ExitManager tivExit(tiv, level);
 
 	// Initialization of the main Window
 	RenderWindow app(VideoMode(TILE_WIDTH * NUMBER_BLOCS_WIDTH, TILE_HEIGHT * NUMBER_BLOCS_HEIGHT, 32), "Tiv's World");
@@ -61,17 +63,19 @@ int main()
 			}
 		}
 
-		if (Keyboard::isKeyPressed(Keyboard::Up) && colTiv.CollisionTest(Character::up))
+		if (Keyboard::isKeyPressed(Keyboard::Up) && tivCol.CollisionTest(Character::up))
 			tiv.Move(Character::up);
 
-		if (Keyboard::isKeyPressed(Keyboard::Down) && colTiv.CollisionTest(Character::down))
+		if (Keyboard::isKeyPressed(Keyboard::Down) && tivCol.CollisionTest(Character::down))
 			tiv.Move(Character::down);
 
-		if (Keyboard::isKeyPressed(Keyboard::Left) && colTiv.CollisionTest(Character::left))
+		if (Keyboard::isKeyPressed(Keyboard::Left) && tivCol.CollisionTest(Character::left))
 			tiv.Move(Character::left);
 
-		if (Keyboard::isKeyPressed(Keyboard::Right) && colTiv.CollisionTest(Character::right))
+		if (Keyboard::isKeyPressed(Keyboard::Right) && tivCol.CollisionTest(Character::right))
 			tiv.Move(Character::right);
+
+		tivExit.PositionTest();
 
 		// Clear screen
 		app.clear();
