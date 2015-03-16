@@ -1,7 +1,7 @@
 2
 Robot2 700 100
 Robot2 100 75
-images/tileset.bmp
+pictures/tileset.bmp
 14 7
 25 25
 tile0 herbe tile1 herbe tile2 rocher tile3 rocher tile4 haut tile5 bas tile6 buisson tile7 mur tile8 maison tile9 maison tile10 maison tile11 maison tile12 maison tile13 maison

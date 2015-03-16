@@ -1,6 +1,6 @@
 #include <SFML/Graphics.hpp>
 
-#include "Niveau.h"
+#include "Level.h"
 
 using namespace sf;
 using namespace std;
@@ -9,25 +9,24 @@ using namespace std;
 
 int main()
 {
-	const int LARGEUR_TILE = 25; // hauteur et largeur des tiles en pixels
-	const int HAUTEUR_TILE = 25;
+	const int TILE_WIDTH = 25; // height and width of each tiles in pixels
+	const int TILE_HEIGHT = 25;
 
-	const int NOMBRE_BLOCS_LARGEUR = 32; // nombre de tiles à afficher en x et y
-	const int NOMBRE_BLOCS_HAUTEUR = 20;
+	const int NUMBER_BLOCS_WIDTH = 32; // number of tiles to display on both x and y axis
+	const int NUMBER_BLOCS_HEIGHT = 20;
 
-	//srand(time(0));
-	Niveau niv = Niveau(2);
-	map<string, string> tableNiveau = niv.GetTable();
+	Level level = Level(2);
+	map<string, string> listLevel = level.GetList();
 
 
-	// Création de la fenêtre principale
-	RenderWindow app(VideoMode(LARGEUR_TILE * NOMBRE_BLOCS_LARGEUR, HAUTEUR_TILE * NOMBRE_BLOCS_HAUTEUR, 32), "Tiv's World");
+	// Initialization of the main Window
+	RenderWindow app(VideoMode(TILE_WIDTH * NUMBER_BLOCS_WIDTH, TILE_HEIGHT * NUMBER_BLOCS_HEIGHT, 32), "Tiv's World");
 	app.setFramerateLimit(60);
 
-	// Boucle principale du jeu
+	// Main loop
 	while (app.isOpen())
 	{
-		// Gestion des évènements
+		// Event Manager
 		Event event;
 		while (app.pollEvent(event))
 		{
@@ -58,12 +57,13 @@ int main()
 			}
 		}
 
+		// Clear screen
 		app.clear();
 
-		// Affichage des éléments
-		niv.Affiche(app);
-
-		// Rafraichissement de la fenêtre
+		// Draw the sprites
+		level.Show(app);
+		
+		// Update the window
 		app.display();
 	}
 

@@ -18,12 +18,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Niveau.cpp">
+    <ClCompile Include="Level.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Niveau.h">
+    <ClInclude Include="Level.h">
       <Filter>Fichiers sources</Filter>
     </ClInclude>
   </ItemGroup>
