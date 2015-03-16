@@ -1,0 +1,34 @@
+2
+Robot2 700 300
+Robot1 100 75
+images/tileset.bmp
+14 7
+25 25
+tile0 herbe tile1 herbe tile2 rocher tile3 rocher tile4 haut tile5 bas tile6 buisson tile7 mur tile8 maison tile9 maison tile10 maison tile11 maison tile12 maison tile13 maison
+tile14 rien tile15 rien tile16 rocher tile17 rocher tile18 gauche tile19 droite tile20 rien tile21 rien tile22 maison tile23 maison tile24 maison tile25 maison tile26 maison tile27 maison
+tile28 riveHG tile29 riveH tile30 riveH tile31 riveHG tile32 rien tile33 rien tile34 rien tile35 rien tile36 maison tile37 maison tile38 maison tile39 maison tile40 maison tile41 maison
+tile42 riveG tile43 eau tile44 eau tile45 riveD tile46 rien tile47 rien tile48 rien tile49 rien tile50 maison tile51 maison tile52 maison tile53 maison tile54 maison tile55 maison
+tile56 riveBG tile57 riveB tile58 riveB tile59 riveBD tile60 rien tile61 rien tile62 rien tile63 rien tile64 maison tile65 maison tile66 maison tile67 maison tile68 maison tile69 maison
+tile70 paroie tile71 paroie tile72 paroie tile73 paroie tile74 rien tile75 rien tile76 rien tile77 rien tile78 maison tile79 maison tile80 maison tile81 maison tile82 maison tile83 maison
+tile84 eau tile85 eau tile86 eau tile87 eau tile88 rien tile89 rien tile90 rien tile91 rien tile92 rien tile93 rien tile94 seuil tile95 seuil tile96 rien tile97 rien
+32 20
+ 7  7  7  7  7  7  7  7  7  7  7  7  7  7  4  4  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7
+ 7  0  0  0  0  0  0  6  0  0  0  0  6  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  7
+ 7  0  0  0  0  0  0  6  0  2  3  0  6  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  7
+ 7  0  0  0  0  0  0  6  0 16 17  0  6  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  7
+ 7  0  0  0  0  0  0  6  0  0  0  0  6  0  0  0  0  0  0  0  6  6  6  6  6  6  0  0  0  0  0  7
+ 7  0  0  0  0  0  0  6  6  6  6  6  6  0  0  0  0  0  0  0  6  0  0  0  0  6  0  0  0  0  0  7
+ 7  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  6  0  2  3  0  6  0  0  0  0  0  7
+ 7  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  6  0 16 17  0  6  0  0  0  0  0  7
+ 7  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  6  0  0  0  0  6  0  0  0  0  0  7
+18  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  6  6  6  6  6  6  0  0  0  0  0  7
+18  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  7
+ 7  0  0  0  0  0  0  0  0  0  0  0  8  9 10 11 12 13  0  0  0  0  0  0  0  0  0  0  0  0  0  7
+ 7  0  0  0  0  0  0  0  0  0  0  0 22 23 24 25 26 27  0  0  0  0  0  0  0  0  0  0  0  0  0  7
+ 7  0  0  0  0  0  0  0  0  0  0  0 36 37 38 39 40 41  0  0  6  6  6  0  6  0  6  0  0  0  6  7
+ 7  0  0  0  0  6  6  6  6  6  6  0 50 51 52 53 54 55  0  0  0  6  0  0  6  0  6  0  0  0  6  7
+ 7  0  0  0  0  6  0  0  0  0  6  0 64 65 66 67 68 69  0  0  0  6  0  0  6  0  0  6  0  6  0  7
+ 7  0  0  0  0  6  0  2  3  0  6  0 78 79 80 81 82 83  0  0  0  6  0  0  6  0  0  6  0  6  0  7
+ 7  0  0  0  0  6  0 16 17  0  6  0  0  0 94 95  0  0  0  0  0  6  0  0  6  0  0  0  6  0  0  7
+ 7  0  0  0  0  6  0  0  0  0  6  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  7
+ 7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7  7
