@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 
 #include "Level.h"
+#include "Character.h"
 
 using namespace sf;
 using namespace std;
@@ -16,18 +17,19 @@ int main()
 	const int NUMBER_BLOCS_HEIGHT = 20;
 
 	Level level = Level(2);
-	map<string, string> listLevel = level.GetList();
 
+	Character tiv("Tiv", Vector2f(400, 300));
 
 	// Initialization of the main Window
 	RenderWindow app(VideoMode(TILE_WIDTH * NUMBER_BLOCS_WIDTH, TILE_HEIGHT * NUMBER_BLOCS_HEIGHT, 32), "Tiv's World");
 	app.setFramerateLimit(60);
 
+	Event event;
+
 	// Main loop
 	while (app.isOpen())
 	{
 		// Event Manager
-		Event event;
 		while (app.pollEvent(event))
 		{
 			switch (event.type)
@@ -62,6 +64,7 @@ int main()
 
 		// Draw the sprites
 		level.Show(app);
+		app.draw(tiv.GetSprite());
 		
 		// Update the window
 		app.display();
