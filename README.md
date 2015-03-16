@@ -25,4 +25,11 @@ Few explainations...
 
 So I'm opened to all the help you can give me to continue my game, to have better knowledge in C++, to have a better organization for my code, to show me things I forgot...
 
+For the moment here are the few things to do :
+- to add a class for the characters (main characters and hostiles or a class for each one)
+- to add a class for the collision (for not to walk through the walls...)
+- to add a class for the exit of the map (to load the next map, hostiles...)
+- to add a claas for weapons (so health attributs will be needed for the characters, object to take back health...)
+- few more to come... but not in mind for the moment ;-)
+
 Thank you by advance for all your help ;-)
