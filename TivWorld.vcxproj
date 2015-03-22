@@ -86,6 +86,7 @@
   <ItemGroup>
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="Init.cpp" />
     <ClCompile Include="ExitManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Level.cpp" />
@@ -93,6 +94,7 @@
   <ItemGroup>
     <ClInclude Include="Character.h" />
     <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="Init.h" />
     <ClInclude Include="ExitManager.h" />
     <ClInclude Include="Level.h" />
   </ItemGroup>

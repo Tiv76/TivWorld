@@ -4,6 +4,7 @@
 #include "Character.h"
 #include "CollisionManager.h"
 #include "ExitManager.h"
+#include "Init.h"
 
 using namespace sf;
 using namespace std;
@@ -12,11 +13,6 @@ using namespace std;
 
 int main()
 {
-	const int TILE_WIDTH = 25; // height and width of each tiles in pixels
-	const int TILE_HEIGHT = 25;
-
-	const int NUMBER_BLOCS_WIDTH = 32; // number of tiles to display on both x and y axis
-	const int NUMBER_BLOCS_HEIGHT = 20;
 
 	Level level = Level(2);
 
@@ -25,7 +21,7 @@ int main()
 	ExitManager tivExit(tiv, level);
 
 	// Initialization of the main Window
-	RenderWindow app(VideoMode(TILE_WIDTH * NUMBER_BLOCS_WIDTH, TILE_HEIGHT * NUMBER_BLOCS_HEIGHT, 32), "Tiv's World");
+	RenderWindow app(VideoMode(Init::TILE_WIDTH * Init::NUMBER_BLOCS_WIDTH, Init::TILE_HEIGHT * Init::NUMBER_BLOCS_HEIGHT, 32), "Tiv's World");
 	app.setFramerateLimit(60);
 
 	Event event;
