@@ -9,6 +9,11 @@ public :
 
 	static const int NUMBER_BLOCS_WIDTH;
 	static const int NUMBER_BLOCS_HEIGHT;
+
+	static const int LEVEL_N;
+
+	static const int POS_X;
+	static const int POS_Y;
 };
 
 #endif // INIT_H_INCLUDED

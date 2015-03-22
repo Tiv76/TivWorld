@@ -14,9 +14,9 @@ using namespace std;
 int main()
 {
 
-	Level level = Level(2);
+	Level level = Level(Init::LEVEL_N);
 
-	Character tiv("Tiv", Vector2f(400, 300));
+	Character tiv("Tiv", Vector2f(Init::POS_X, Init::POS_Y));
 	CollisionManager tivCol(tiv, level);
 	ExitManager tivExit(tiv, level);
 
