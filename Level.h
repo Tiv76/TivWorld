@@ -22,7 +22,7 @@ public:
 private:
 	int myNLevel;
 	sf::Texture myTileset;
-	std::map<std::string, std::string> myList;
+	std::map<std::string, std::string> myListLevelAttributs;
 	std::map<std::string, std::string> myListHostiles;
 
 	std::string Read(std::ifstream &file);
