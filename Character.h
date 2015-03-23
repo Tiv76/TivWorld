@@ -15,7 +15,7 @@ public:
 	void SetPosition(sf::Vector2f position);
 
 	const sf::Sprite & GetSprite() const;
-	const std::string GetType() const;
+	const std::string & GetType() const;
 
 private:
 	// Character's attributs

@@ -63,7 +63,7 @@ const Sprite & Character::GetSprite() const
 	return mySprite;
 }
 
-const string Character::GetType() const
+const string & Character::GetType() const
 {
 	return myType;
 }
