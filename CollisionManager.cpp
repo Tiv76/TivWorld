@@ -3,6 +3,9 @@
 using namespace std;
 using namespace sf;
 
+CollisionManager::CollisionManager() : myCharacter(Character()), myLevel(Level())
+{}
+
 CollisionManager::CollisionManager(Character &character, Level &level) : myCharacter(character), myLevel(level)
 {}
 

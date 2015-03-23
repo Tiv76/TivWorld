@@ -86,16 +86,20 @@
   <ItemGroup>
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Init.cpp" />
     <ClCompile Include="ExitManager.cpp" />
+    <ClCompile Include="KeyboardManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Level.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h" />
     <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Init.h" />
     <ClInclude Include="ExitManager.h" />
+    <ClInclude Include="KeyboardManager.h" />
     <ClInclude Include="Level.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

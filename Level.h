@@ -11,6 +11,7 @@
 class Level
 {
 public:
+	Level();
 	Level(int nLevel);
 	void Show(sf::RenderWindow &window);
 

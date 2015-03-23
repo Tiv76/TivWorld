@@ -3,6 +3,9 @@
 using namespace std;
 using namespace sf;
 
+Level::Level()
+{}
+
 Level::Level(int nLevel) : myNLevel(nLevel)
 {
 	string fileName = "levels/level" + to_string(myNLevel) + ".txt";
@@ -26,7 +29,7 @@ Level::Level(int nLevel) : myNLevel(nLevel)
 	myList["NUMBER_TILE_Y"] = Read(file);
 
 	// Recovering the tiles size in pixels
-	myList["TILE_WIDTH"] = Read(file);
+	myList["TILE_WIDTH"] =  Read(file);
 	myList["TILE_HEIGHT"] = Read(file);
 
 	// Recovering tiles properties

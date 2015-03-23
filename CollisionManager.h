@@ -9,6 +9,7 @@
 class CollisionManager
 {
 public:
+	CollisionManager();
 	CollisionManager(Character &character, Level &level);
 	bool CollisionTest(Character::Direction direction);
 
