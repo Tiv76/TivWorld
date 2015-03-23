@@ -10,27 +10,28 @@ ExitManager::ExitManager(Character &character, Level &level) : myCharacter(chara
 void ExitManager::PositionTest()
 {
 	Sprite sprite = myCharacter.GetSprite();
-	map<string, string> levelList = myLevel.GetList();
-	int width = sprite.getGlobalBounds().width, height = sprite.getGlobalBounds().height;
-	int posX = sprite.getPosition().x, posY = sprite.getPosition().y, nTile = (posX + width / 2) / 25 + ((posY + height / 2) / 25) * 32;
-	string tile = "tile" + levelList[to_string(nTile)];
+	vector<int> tileMap = myLevel.GetTileMap();
+	vector<string> mapAttributs = myLevel.GetMapAttributs();
 
-	if (levelList[tile] == "right" && myCharacter.GetType() == "Tiv")
+	int posX = sprite.getPosition().x, posY = sprite.getPosition().y;
+	int nTile = (posX + Init::TIV_WIDTH / 2) / Init::TILE_WIDTH + ((posY + Init::TIV_HEIGHT / 2) / Init::TILE_HEIGHT) * Init::NUMBER_BLOCS_WIDTH;
+
+	if (mapAttributs[tileMap[nTile]] == "right")
 	{
 		myLevel = Level(myLevel.GetNLevel() + 1);
 		myCharacter.SetPosition(Vector2f(25, posY));
 	}
-	if (levelList[tile] == "left" && myCharacter.GetType() == "Tiv")
+	if (mapAttributs[tileMap[nTile]] == "left")
 	{
 		myLevel = Level(myLevel.GetNLevel() - 1);
 		myCharacter.SetPosition(Vector2f(750, posY));
 	}
-	if (levelList[tile] == "up" && myCharacter.GetType() == "Tiv")
+	if (mapAttributs[tileMap[nTile]] == "up")
 	{
 		myLevel = Level(myLevel.GetNLevel() - 10);
 		myCharacter.SetPosition(Vector2f(posX, 450));
 	}
-	if (levelList[tile] == "down" && myCharacter.GetType() == "Tiv")
+	if (mapAttributs[tileMap[nTile]] == "down")
 	{
 		myLevel = Level(myLevel.GetNLevel() + 10);
 		myCharacter.SetPosition(Vector2f(posX, 25));

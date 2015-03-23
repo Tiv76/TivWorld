@@ -5,6 +5,7 @@
 
 #include "Character.h"
 #include "Level.h"
+#include "Init.h"
 
 class CollisionManager
 {

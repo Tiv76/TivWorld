@@ -14,58 +14,50 @@ CollisionManager::CollisionManager(Character &character, Level &level) : myChara
 bool CollisionManager::CollisionTest(Character::Direction direction)
 {
 	Sprite sprite = myCharacter.GetSprite();
-	int posX = sprite.getPosition().x, posY = sprite.getPosition().y, nTile, width = sprite.getGlobalBounds().width, height = sprite.getGlobalBounds().height;
-	string tile;
-	map<string, string> levelList = myLevel.GetList();
+	int posX = sprite.getPosition().x, posY = sprite.getPosition().y, nTile;
+	vector<int> tileMap = myLevel.GetTileMap();
+	vector<string> mapAttributs = myLevel.GetMapAttributs();
 
 	if (direction == Character::up)
 	{
-		nTile = (posX + width - 3) / 25 + (posY / 25) * 32;
-		tile = "tile" + levelList[to_string(nTile)];
-		if (TileTest(levelList[tile]))
+		nTile = (posX + Init::TIV_WIDTH - 3) / Init::TILE_WIDTH + (posY / Init::TILE_HEIGHT) * Init::NUMBER_BLOCS_WIDTH;
+		if (TileTest(mapAttributs[tileMap[nTile]]))
 		{
-			nTile = (posX + 3) / 25 + (posY / 25) * 32;
-			tile = "tile" + levelList[to_string(nTile)];
-			return TileTest(levelList[tile]);
+			nTile = (posX + 3) / Init::TILE_WIDTH + (posY / Init::TILE_HEIGHT) * Init::NUMBER_BLOCS_WIDTH;
+			return TileTest(mapAttributs[tileMap[nTile]]);
 		}
 	}
 	if (direction == Character::down)
 	{
-		nTile = (posX + width - 3) / 25 + ((posY + height) / 25) * 32;
-		tile = "tile" + levelList[to_string(nTile)];
-		if (TileTest(levelList[tile]))
+		nTile = (posX + Init::TIV_WIDTH - 3) / Init::TILE_WIDTH + ((posY + Init::TIV_HEIGHT) / Init::TILE_HEIGHT) * Init::NUMBER_BLOCS_WIDTH;
+		if (TileTest(mapAttributs[tileMap[nTile]]))
 		{
-			nTile = (posX + 3) / 25 + ((posY + height) / 25) * 32;
-			tile = "tile" + levelList[to_string(nTile)];
-			return TileTest(levelList[tile]);
+			nTile = (posX + 3) / Init::TILE_WIDTH + ((posY + Init::TIV_HEIGHT) / Init::TILE_HEIGHT) * Init::NUMBER_BLOCS_WIDTH;
+			return TileTest(mapAttributs[tileMap[nTile]]);
 		}
 	}
 	if (direction == Character::left)
 	{
-		nTile = posX / 25 + ((posY + height - 3) / 25) * 32;
-		tile = "tile" + levelList[to_string(nTile)];
-		if (TileTest(levelList[tile]))
+		nTile = posX / Init::TILE_WIDTH + ((posY + Init::TIV_HEIGHT - 3) / Init::TILE_HEIGHT) * Init::NUMBER_BLOCS_WIDTH;
+		if (TileTest(mapAttributs[tileMap[nTile]]))
 		{
-			nTile = posX / 25 + ((posY + 3) / 25) * 32;
-			tile = "tile" + levelList[to_string(nTile)];
-			return TileTest(levelList[tile]);
+			nTile = posX / Init::TILE_WIDTH + ((posY + 3) / Init::TILE_HEIGHT) * Init::NUMBER_BLOCS_WIDTH;
+			return TileTest(mapAttributs[tileMap[nTile]]);
 		}
 	}
 	if (direction == Character::right)
 	{
-		nTile = (posX + width) / 25 + ((posY + height - 3) / 25) * 32;
-		tile = "tile" + levelList[to_string(nTile)];
-		if (TileTest(levelList[tile]))
+		nTile = (posX + Init::TIV_WIDTH) / Init::TILE_WIDTH + ((posY + Init::TIV_HEIGHT - 3) / Init::TILE_HEIGHT) * Init::NUMBER_BLOCS_WIDTH;
+		if (TileTest(mapAttributs[tileMap[nTile]]))
 		{
-			nTile = (posX + width) / 25 + ((posY + 3) / 25) * 32;
-			tile = "tile" + levelList[to_string(nTile)];
-			return TileTest(levelList[tile]);
+			nTile = (posX + Init::TIV_WIDTH) / Init::TILE_WIDTH + ((posY + 3) / Init::TILE_HEIGHT) * Init::NUMBER_BLOCS_WIDTH;
+			return TileTest(mapAttributs[tileMap[nTile]]);
 		}
 	}
 	return false;
 }
 
-bool CollisionManager::TileTest(std::string tileValue)
+bool CollisionManager::TileTest(string tileValue)
 {
 	return (tileValue == "grass" || tileValue == "threshold" || tileValue == "up" || tileValue == "down" || tileValue == "left" || tileValue == "right" || tileValue == "door");
 }
