@@ -25,7 +25,6 @@ private:
 	std::string myType;
 
 	std::string myFilePath;
-	sf::Image myImage;
 	sf::Sprite mySprite;
 	sf::Texture myTexture;
 	sf::IntRect mySubRect;

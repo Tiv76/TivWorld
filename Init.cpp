@@ -17,7 +17,7 @@ const int Init::TIV_WIDTH = 18;
 const int Init::TIV_HEIGHT = 25;
 
 // Number of the level for starting the game
-const int Init::LEVEL_N = 2;
+const int Init::LEVEL_N = 12;
 
 // Initial position of the main character
 const int Init::POS_X = 400;

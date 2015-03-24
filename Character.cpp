@@ -12,7 +12,7 @@ Character::Character(string type, Vector2f position) : myType(type)
 	mySubRect = IntRect(0, myHeight, myWidth, myHeight);
 	myTexture.loadFromFile(myFilePath);
 	mySprite.setTexture(myTexture);
-	mySprite.setTextureRect(mySubRect); // Sous rectangle
+	mySprite.setTextureRect(mySubRect);
 	mySprite.setPosition(position);
 }
 
