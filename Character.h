@@ -12,10 +12,13 @@ public:
 	enum Direction { up, down, left, right };
 
 	void Move(Direction direction);
+	void MoveAuto();
 	void SetPosition(sf::Vector2f position);
 
 	const sf::Sprite & GetSprite() const;
 	const std::string & GetType() const;
+
+	void SetType(std::string &type);
 
 private:
 	// Character's attributs
@@ -33,7 +36,12 @@ private:
 	int myStep = 0;
 	int myStepMax;
 
-	void SetCharacter(std::string type);
+	// Attributs for random movements of hostiles
+	int myTime = 0;
+	int myT;
+	Direction myRandomDirection;
+
+	void SetCharacter(std::string &type);
 	void Step0();
 };
 

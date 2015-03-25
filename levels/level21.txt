@@ -1,5 +1,5 @@
 2
-Robot1 700 100
+Robot1 400 100
 Robot1 100 300
 pictures/tileset.bmp
 tile0 grass tile1 grass tile2 rock tile3 rock tile4 up tile5 down tile6 bush tile7 wall tile8 house tile9 house tile10 house tile11 house tile12 house tile13 house

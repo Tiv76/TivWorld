@@ -19,13 +19,20 @@ public:
 private:
 	sf::RenderWindow &myWindow;
 	Level &myLevel = Level(Init::LEVEL_N);
+	int myNHostiles;
 	Character &myTiv = Character("Tiv", sf::Vector2f(Init::POS_X, Init::POS_Y));
+	Character &myHostile1 = Character();
+	Character &myHostile2 = Character();
+	Character &myHostile3 = Character();
+	Character &myHostile4 = Character();
 	CollisionManager &myColManager = CollisionManager(myTiv, myLevel);
 	KeyboardManager &myKeyboard = KeyboardManager(myTiv, myColManager);
 	ExitManager &myExitManager = ExitManager(myTiv, myLevel);
 
+	void InitHostiles();
 	void Render();
 	void Update();
+	void MoveHostiles();
 };
 
 #endif // GAME_H_INCLUDED

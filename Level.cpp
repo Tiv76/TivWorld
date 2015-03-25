@@ -58,8 +58,13 @@ void Level::Show(RenderWindow &window)
 	}
 }
 
-//########### Attributs Access ###########
+void Level::ChangeStatus()
+{
+	if (myNewStatus)
+		myNewStatus = false;
+}
 
+//########### Attributs Access ###########
 const vector<int> & Level::GetTileMap() const
 {
 	return myTileMap;
@@ -80,8 +85,18 @@ const int & Level::GetNLevel() const
 	return myNLevel;
 }
 
-//############ Private Functions ############
+const int & Level::GetNHostiles() const
+{
+	return myNHostiles;
+}
 
+const bool Level::GetNewStatus() const
+{
+	return myNewStatus;
+}
+
+
+//############ Private Functions ############
 string Level::Read(ifstream &file)
 {
 	string word;

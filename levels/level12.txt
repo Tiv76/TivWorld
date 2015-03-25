@@ -1,8 +1,6 @@
-4
-Robot1 700 100
+2
+Robot1 200 150
 Robot1 100 75
-Robot2 750 300
-Robot2 100 300
 pictures/tileset.bmp
 tile0 grass tile1 grass tile2 rock tile3 rock tile4 up tile5 down tile6 bush tile7 wall tile8 house tile9 house tile10 house tile11 house tile12 house tile13 house
 tile14 empty tile15 empty tile16 rock tile17 rock tile18 left tile19 right tile20 empty tile21 empty tile22 house tile23 house tile24 house tile25 house tile26 house tile27 house
