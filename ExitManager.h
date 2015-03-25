@@ -13,10 +13,6 @@ public:
 	ExitManager(Character &character, Level &level);
 	void PositionTest();
 
-	bool & GetInitStatus();
-
-	void SetInitStatus(bool status);
-
 private:
 	Character &myCharacter;
 	Level &myLevel;
