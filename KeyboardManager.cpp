@@ -20,3 +20,31 @@ void KeyboardManager::Action()
 	if (Keyboard::isKeyPressed(Keyboard::Right) && myColManager.CollisionTest(Character::right))
 		myCharacter.Move(Character::right);
 }
+
+void KeyboardManager::MoveAuto()
+{
+	if (myTime == myT)
+		myTime = 0;
+	if (myTime == 0)
+	{
+		RandomDir();
+	}
+	if (myColManager.CollisionTest(myRandomDirection))
+		myCharacter.Move(myRandomDirection);
+
+	myTime++;
+}
+
+void KeyboardManager::RandomDir()
+{
+	int dir = rand() % 4;
+	myT = rand() % 30 + 10;
+	if (dir == 0)
+		myRandomDirection = Character::up;
+	else if (dir == 1)
+		myRandomDirection = Character::down;
+	else if (dir == 2)
+		myRandomDirection = Character::left;
+	else if (dir == 3)
+		myRandomDirection = Character::right;
+}

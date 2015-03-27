@@ -111,11 +111,11 @@ void Game::Update()
 void Game::MoveHostiles()
 {
 	if (myNHostiles >= 1)
-		myHostile1.MoveAuto();
+		myKeyboardH1.MoveAuto();
 	if (myNHostiles >= 2)
-		myHostile2.MoveAuto();
+		myKeyboardH2.MoveAuto();
 	if (myNHostiles >= 3)
-		myHostile3.MoveAuto();
+		myKeyboardH3.MoveAuto();
 	if (myNHostiles >= 4)
-		myHostile4.MoveAuto();
+		myKeyboardH4.MoveAuto();
 }

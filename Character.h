@@ -36,11 +36,6 @@ private:
 	int myStep = 0;
 	int myStepMax;
 
-	// Attributs for random movements of hostiles
-	int myTime = 0;
-	int myT;
-	Direction myRandomDirection;
-
 	void SetCharacter(std::string &type);
 	void Step0();
 };

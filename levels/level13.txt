@@ -7,7 +7,7 @@ tile14 empty tile15 empty tile16 rock tile17 rock tile18 left tile19 right tile2
 tile28 shoreUL tile29 shoreU tile30 shoreU tile31 shoreUR tile32 empty tile33 empty tile34 empty tile35 empty tile36 house tile37 house tile38 house tile39 house tile40 house tile41 house
 tile42 shoreL tile43 water tile44 water tile45 shoreR tile46 empty tile47 empty tile48 empty tile49 empty tile50 house tile51 house tile52 house tile53 house tile54 house tile55 house
 tile56 shoreDL tile57 shoreD tile58 shoreD tile59 shoreDR tile60 empty tile61 empty tile62 empty tile63 empty tile64 house tile65 house tile66 house tile67 house tile68 house tile69 house
-tile70 wall tile71 wall tile72 wall tile73 wall tile74 empty tile75 empty tile76 empty tile77 empty tile78 house tile79 house tile80 door tile81 door tile82 house tile83 house
+tile70 wall tile71 wall tile72 wall tile73 wall tile74 empty tile75 empty tile76 empty tile77 empty tile78 house tile79 house tile80 doorIn tile81 doorIn tile82 house tile83 house
 tile84 water tile85 water tile86 water tile87 water tile88 empty tile89 empty tile90 empty tile91 empty tile92 empty tile93 empty tile94 threshold tile95 threshold tile96 empty tile97 empty
 7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	4	4	7	7	7	7	7	7
 7	2	3	0	0	0	6	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	7

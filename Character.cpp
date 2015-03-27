@@ -51,27 +51,6 @@ void Character::Move(Direction direction)
 	}
 }
 
-void Character::MoveAuto()
-{
-	if (myTime == myT)
-		myTime = 0;
-	if (myTime == 0)
-	{
-		int dir = rand() % 4;
-		myT = rand() % 30 + 10;
-		if (dir == 0)
-			myRandomDirection = up;
-		if (dir == 1)
-			myRandomDirection = down;
-		if (dir == 2)
-			myRandomDirection = left;
-		if (dir == 3)
-			myRandomDirection = right;
-	}
-	Move(myRandomDirection);
-	myTime++;
-}
-
 void Character::SetPosition(sf::Vector2f position)
 {
 	mySprite.setPosition(position);
