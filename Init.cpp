@@ -1,5 +1,8 @@
 #include "Init.h"
 
+using namespace std;
+using namespace sf;
+
 // Height and width of each tiles in pixels
 const int Init::TILE_WIDTH = 25;
 const int Init::TILE_HEIGHT = 25;

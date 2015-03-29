@@ -1,31 +1,32 @@
 2
-Robot2 100 250
-Robot2 300 75
+Zombie1 100 250
+Zombie2 300 75
 pictures/tileset.bmp
-tile0 grass tile1 grass tile2 rock tile3 rock tile4 up tile5 down tile6 bush tile7 wall tile8 house tile9 house tile10 house tile11 house tile12 house tile13 house
-tile14 empty tile15 empty tile16 rock tile17 rock tile18 left tile19 right tile20 empty tile21 empty tile22 house tile23 house tile24 house tile25 house tile26 house tile27 house
-tile28 shoreUL tile29 shoreU tile30 shoreU tile31 shoreUR tile32 empty tile33 empty tile34 empty tile35 empty tile36 house tile37 house tile38 house tile39 house tile40 house tile41 house
-tile42 shoreL tile43 water tile44 water tile45 shoreR tile46 empty tile47 empty tile48 empty tile49 empty tile50 house tile51 house tile52 house tile53 house tile54 house tile55 house
-tile56 shoreDL tile57 shoreD tile58 shoreD tile59 shoreDR tile60 empty tile61 empty tile62 empty tile63 empty tile64 house tile65 house tile66 house tile67 house tile68 house tile69 house
-tile70 wall tile71 wall tile72 wall tile73 wall tile74 empty tile75 empty tile76 empty tile77 empty tile78 house tile79 house tile80 doorIn tile81 doorIn tile82 house tile83 house
-tile84 water tile85 water tile86 water tile87 water tile88 empty tile89 empty tile90 empty tile91 empty tile92 empty tile93 empty tile94 threshold tile95 threshold tile96 empty tile97 empty
+tile0	grass	tile1	grass	tile2	rock	tile3	rock	tile4	up	tile5	down	tile6	bush	tile7	wall	tile8	house	tile9	house	tile10	house	tile11	house	tile12	house	tile13	house
+tile14	grass	tile15	grass	tile16	rock	tile17	rock	tile18	left	tile19	right	tile20	bridge	tile21	empty	tile22	house	tile23	house	tile24	house	tile25	house	tile26	house	tile27	house
+tile28	grass	tile29	grass	tile30	grass	tile31	grass	tile32	empty	tile33	empty	tile34	empty	tile35	empty	tile36	house	tile37	house	tile38	house	tile39	house	tile40	house	tile41	house
+tile42	grass	tile43	grass	tile44	grass	tile45	grass	tile46	empty	tile47	empty	tile48	empty	tile49	empty	tile50	house	tile51	house	tile52	house	tile53	house	tile54	house	tile55	house
+tile56	water	tile57	water	tile58	empty	tile59	empty	tile60	empty	tile61	empty	tile62	empty	tile63	empty	tile64	house	tile65	house	tile66	house	tile67	house	tile68	house	tile69	house
+tile70	grass	tile71	grass	tile72	empty	tile73	empty	tile74	empty	tile75	empty	tile76	empty	tile77	empty	tile78	house	tile79	house	tile80	doorIn	tile81	doorIn	tile82	house	tile83	house
+tile84	grass	tile85	grass	tile86	empty	tile87	empty	tile88	empty	tile89	empty	tile90	empty	tile91	empty	tile92	empty	tile93	empty	tile94	door	tile95	door	tile96	house	tile97	empty
 7	7	7	4	4	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	4	4	7	7	7	7
 7	0	0	0	0	0	2	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	7
-7	0	0	0	0	0	16	17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	7
+7	0	0	15	0	0	16	17	0	0	0	0	0	0	0	0	0	0	0	0	15	0	0	0	0	0	1	1	0	0	0	7
 7	0	0	0	0	0	2	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	7
-7	0	0	0	0	0	16	17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	7
-7	0	0	0	0	0	2	3	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	7
+7	0	0	0	15	0	16	17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	7
+7	0	0	14	0	0	2	3	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	15	0	7
 7	0	0	0	0	0	16	17	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	7
-7	0	0	0	0	0	2	3	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	7
+7	0	0	0	15	0	2	3	0	0	0	0	14	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	7
 7	0	0	0	0	0	16	17	0	0	0	0	0	0	0	0	1	1	1	8	9	10	11	12	13	1	1	1	0	0	0	7
-7	0	0	0	0	0	6	6	0	0	0	0	0	0	0	0	1	1	1	22	23	24	25	26	27	1	1	1	0	0	0	7
-7	0	0	0	0	0	6	6	0	0	0	0	0	0	0	0	1	1	1	36	37	38	39	40	41	1	1	1	0	0	0	7
-7	0	0	0	0	0	6	6	0	0	0	0	0	0	0	0	1	1	1	50	51	52	53	54	55	1	1	1	0	0	0	7
-7	0	0	0	0	0	6	6	0	0	0	0	0	0	0	0	1	1	1	64	65	66	67	68	69	1	1	1	0	0	0	7
+7	0	0	15	0	0	6	6	0	0	0	0	0	0	0	0	1	1	1	22	23	96	96	26	27	1	1	1	0	0	0	7
+7	0	0	0	0	0	6	6	0	0	0	0	0	0	0	0	1	1	1	36	37	96	96	40	41	1	1	1	0	0	0	7
+7	0	0	0	14	0	6	6	0	0	0	0	0	0	0	0	1	1	1	50	51	52	53	54	55	1	1	1	0	0	0	7
+7	0	0	15	0	0	6	6	0	0	0	0	0	0	0	0	1	1	1	64	65	66	67	68	69	1	1	1	0	0	0	7
 7	0	0	0	0	0	6	6	0	0	0	0	0	0	0	0	1	1	1	78	79	80	81	82	83	1	1	1	0	0	0	7
-7	0	0	0	0	0	6	6	0	0	0	0	0	0	0	0	1	1	1	1	1	94	95	1	1	1	1	1	1	1	1	19
+7	0	0	0	15	0	6	6	0	0	0	0	0	0	0	0	1	1	1	1	1	94	95	1	1	1	1	1	1	1	1	19
 7	0	0	0	0	0	6	6	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	19
-7	0	0	0	0	0	6	6	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	7
+7	0	0	15	0	0	6	6	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	7
 7	0	0	0	0	0	6	6	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7
-7	0	0	0	0	0	6	6	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7
+7	0	0	0	14	0	6	6	0	0	0	0	1	1	0	0	0	0	0	0	0	0	15	0	0	0	0	0	0	0	0	7
 7	7	7	5	5	7	7	7	7	7	7	7	5	5	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7
+

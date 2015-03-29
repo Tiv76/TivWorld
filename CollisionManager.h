@@ -19,7 +19,6 @@ private:
 	Level &myLevel;
 
 	bool TileTest(std::string tileValue);
-
 };
 
 #endif // COLLISIONMANAGER_H_INCLUDED

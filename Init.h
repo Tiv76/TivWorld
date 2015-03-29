@@ -1,6 +1,8 @@
 #ifndef INIT_H_INCLUDED
 #define INIT_H_INCLUDED
 
+#include <SFML/Graphics.hpp>
+
 class Init
 {
 public :

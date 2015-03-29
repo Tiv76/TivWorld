@@ -46,6 +46,7 @@ private:
 	void Render();
 	void Update();
 	void MoveHostiles();
+	void Informations();
 };
 
 #endif // GAME_H_INCLUDED

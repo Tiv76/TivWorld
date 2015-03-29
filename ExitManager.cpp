@@ -34,6 +34,6 @@ void ExitManager::PositionTest()
 	if (mapAttributs[tileMap[nTile]] == "down")
 	{
 		myLevel = Level(myLevel.GetNLevel() + 10);
-		myCharacter.SetPosition(Vector2f(posX, 25));
+		myCharacter.SetPosition(Vector2f(posX, 20));
 	}
 }

@@ -14,7 +14,7 @@ CollisionManager::CollisionManager(Character &character, Level &level) : myChara
 bool CollisionManager::CollisionTest(Character::Direction direction)
 {
 	Sprite sprite = myCharacter.GetSprite();
-	int posX = sprite.getPosition().x, posY = sprite.getPosition().y, width = sprite.getLocalBounds().width, height = sprite.getLocalBounds().height, nTile;
+	int posX = sprite.getPosition().x + 6, posY = sprite.getPosition().y + 7, width = sprite.getLocalBounds().width - 12, height = sprite.getLocalBounds().height - 7, nTile;
 	vector<int> tileMap = myLevel.GetTileMap();
 	vector<string> mapAttributs = myLevel.GetMapAttributs();
 
@@ -59,5 +59,8 @@ bool CollisionManager::CollisionTest(Character::Direction direction)
 
 bool CollisionManager::TileTest(string tileValue)
 {
-	return (tileValue == "grass" || tileValue == "threshold" || tileValue == "up" || tileValue == "down" || tileValue == "left" || tileValue == "right" || tileValue == "doorIn");
+	if (myCharacter.GetType() == "Tiv")
+		return (tileValue == "grass" || tileValue == "bridge" || tileValue == "door" || tileValue == "up" || tileValue == "down" || tileValue == "left" || tileValue == "right" || tileValue == "doorIn");
+	else
+		return (tileValue == "grass" || tileValue == "bridge" || tileValue == "door");
 }

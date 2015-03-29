@@ -17,14 +17,18 @@ public:
 
 	const sf::Sprite & GetSprite() const;
 	const std::string & GetType() const;
+	const int & GetLife() const;
 
 	void SetType(std::string &type);
 
 private:
 	// Character's attributs
+	int myTilesetPosX;
+	int myTilesetPosY;
 	int myWidth;
 	int myHeight;
 	int mySpeed;
+	int myLife;
 	std::string myType;
 
 	std::string myFilePath;
@@ -37,6 +41,7 @@ private:
 	int myStepMax;
 
 	void SetCharacter(std::string &type);
+	void Initialization(std::string filePath, int tilesetPosX, int tilesetPosY, int width, int height, int speed, int life, int stepMax);
 	void Step0();
 };
 

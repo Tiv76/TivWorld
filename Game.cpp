@@ -59,6 +59,8 @@ void Game::Render()
 	if (myNHostiles >= 4)
 		myWindow.draw(myHostile4.GetSprite());
 
+	Informations();
+
 	// Update the myWindow
 	myWindow.display();
 }
@@ -118,4 +120,9 @@ void Game::MoveHostiles()
 		myKeyboardH3.MoveAuto();
 	if (myNHostiles >= 4)
 		myKeyboardH4.MoveAuto();
+}
+
+void Game::Informations()
+{
+	
 }
