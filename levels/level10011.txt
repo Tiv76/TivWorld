@@ -1,0 +1,31 @@
+0
+pictures/tileset_house.png
+tile0	ground	tile1	ground	tile2	ground	tile3	ground	tile4	ground	tile5	ground	tile6	wall	tile7	wall	tile8	wall	tile9	wall	tile10	wall	tile11	wall	tile12	wall	tile13	wall
+tile14	ground	tile15	ground	tile16	ground	tile17	ground	tile18	empty	tile19	empty	tile20	wall	tile21	wall	tile22	wall	tile23	wall	tile24	wall	tile25	wall	tile26	wall	tile27	wall
+tile28	table	tile29	table	tile30	ground	tile31	ground	tile32	empty	tile33	empty	tile34	empty	tile35	wall	tile36	empty	tile37	wall	tile38	wall	tile39	wall	tile40	wall	tile41	empty
+tile42	table	tile43	table	tile44	empty	tile45	empty	tile46	empty	tile47	empty	tile48	empty	tile49	wall	tile50	wall	tile51	hOut	tile52	hOut	tile53	wall	tile54	wall	tile55	empty
+tile56	bed	tile57	bed	tile58	bed	tile59	bed	tile60	bed	tile61	empty	tile62	empty	tile63	empty	tile64	empty	tile65	empty	tile66	empty	tile67	empty	tile68	empty	tile69	empty
+tile70	bed	tile71	bed	tile72	bed	tile73	bed	tile74	bed	tile75	empty	tile76	empty	tile77	empty	tile78	empty	tile79	empty	tile80	empty	tile81	empty	tile82	empty	tile83	empty
+tile84	bed	tile85	bed	tile86	bed	tile87	bed	tile88	bed	tile89	empty	tile90	empty	tile91	empty	tile92	empty	tile93	empty	tile94	empty	tile95	empty	tile96	empty	tile97	empty
+385 365
+36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36
+36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36
+36	36	36	36	6	7	7	7	7	7	7	7	9	10	7	7	7	7	39	7	7	7	7	7	7	7	7	13	36	36	36	36
+36	36	36	36	20	21	22	22	22	22	22	22	23	24	22	22	22	22	53	22	22	22	25	22	22	22	26	27	36	36	36	36
+36	36	36	36	20	35	56	57	58	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	40	27	36	36	36	36
+36	36	36	36	20	35	70	71	72	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	40	27	36	36	36	36
+36	36	36	36	20	35	84	85	86	5	4	5	4	5	4	5	4	5	4	5	30	5	4	5	4	5	40	27	36	36	36	36
+36	36	36	36	20	35	4	5	4	5	30	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	40	27	36	36	36	36
+36	36	36	36	20	35	4	5	4	5	4	5	4	28	29	5	4	5	4	5	4	5	4	5	4	5	40	27	36	36	36	36
+36	36	36	36	20	35	4	5	4	5	4	5	4	42	43	5	4	31	4	5	4	5	4	5	4	5	40	27	36	36	36	36
+36	36	36	36	20	35	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	40	27	36	36	36	36
+36	36	36	36	20	35	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	40	27	36	36	36	36
+36	36	36	36	20	35	4	31	4	5	4	5	4	5	4	5	4	5	4	5	4	31	4	5	4	5	40	27	36	36	36	36
+36	36	36	36	20	35	4	5	4	5	4	5	4	5	30	5	4	5	4	5	4	5	4	5	4	5	40	27	36	36	36	36
+36	36	36	36	20	35	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	40	27	36	36	36	36
+36	36	36	36	20	35	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	4	5	40	27	36	36	36	36
+36	36	36	36	20	49	50	50	50	50	50	50	50	50	50	51	52	50	50	50	50	50	50	50	50	50	54	27	36	36	36	36
+36	36	36	36	11	8	8	8	8	8	8	8	8	8	8	37	38	8	8	8	8	8	8	8	8	8	8	12	36	36	36	36
+36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36
+36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36	36
+

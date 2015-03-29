@@ -24,10 +24,12 @@ public:
 	const int & GetNLevel() const;
 	const int & GetNHostiles() const;
 	const bool GetNewStatus() const;
+	const sf::Vector2f & GetDoorPos() const;
 
 private:
 	int myNLevel;
 	int myNHostiles;
+	sf::Vector2f myDoorPos;
 	bool myNewStatus = true;
 	sf::Texture myTileset;
 	std::map<std::string, std::string> myListHostiles;

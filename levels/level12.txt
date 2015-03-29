@@ -7,8 +7,9 @@ tile14	grass	tile15	grass	tile16	rock	tile17	rock	tile18	left	tile19	right	tile2
 tile28	grass	tile29	grass	tile30	grass	tile31	grass	tile32	empty	tile33	empty	tile34	empty	tile35	empty	tile36	house	tile37	house	tile38	house	tile39	house	tile40	house	tile41	house
 tile42	grass	tile43	grass	tile44	grass	tile45	grass	tile46	empty	tile47	empty	tile48	empty	tile49	empty	tile50	house	tile51	house	tile52	house	tile53	house	tile54	house	tile55	house
 tile56	water	tile57	water	tile58	empty	tile59	empty	tile60	empty	tile61	empty	tile62	empty	tile63	empty	tile64	house	tile65	house	tile66	house	tile67	house	tile68	house	tile69	house
-tile70	grass	tile71	grass	tile72	empty	tile73	empty	tile74	empty	tile75	empty	tile76	empty	tile77	empty	tile78	house	tile79	house	tile80	doorIn	tile81	doorIn	tile82	house	tile83	house
-tile84	grass	tile85	grass	tile86	empty	tile87	empty	tile88	empty	tile89	empty	tile90	empty	tile91	empty	tile92	empty	tile93	empty	tile94	door	tile95	door	tile96	house	tile97	empty
+tile70	grass	tile71	grass	tile72	empty	tile73	empty	tile74	empty	tile75	empty	tile76	empty	tile77	empty	tile78	house	tile79	house	tile80	hIn	tile81	hIn	tile82	house	tile83	house
+tile84	grass	tile85	grass	tile86	empty	tile87	empty	tile88	empty	tile89	empty	tile90	empty	tile91	empty	tile92	close	tile93	close	tile94	door	tile95	door	tile96	house	tile97	empty
+385 275
 7	7	7	7	7	7	7	4	4	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7
 7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7
 7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7

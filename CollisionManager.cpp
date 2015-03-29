@@ -60,7 +60,7 @@ bool CollisionManager::CollisionTest(Character::Direction direction)
 bool CollisionManager::TileTest(string tileValue)
 {
 	if (myCharacter.GetType() == "Tiv")
-		return (tileValue == "grass" || tileValue == "bridge" || tileValue == "door" || tileValue == "up" || tileValue == "down" || tileValue == "left" || tileValue == "right" || tileValue == "doorIn");
+		return (tileValue == "grass" || tileValue == "bridge" || tileValue == "door" || tileValue == "up" || tileValue == "down" || tileValue == "left" || tileValue == "right" || tileValue == "hIn" || tileValue == "hOut" || tileValue == "ground");
 	else
 		return (tileValue == "grass" || tileValue == "bridge" || tileValue == "door");
 }

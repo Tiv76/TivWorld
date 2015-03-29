@@ -33,6 +33,11 @@ Level::Level(int nLevel) : myNLevel(nLevel)
 		myMapAttributs.push_back(b);
 	}
 
+	// Recovoring the position to place the main character when exit/enter a house
+	int x = stoi(Read(file));
+	int y = stoi(Read(file));
+	myDoorPos = Vector2f(x, y);
+
 	// Recovering the tilemap
 	for (int i = 0; i < Init::NUMBER_BLOCS_WIDTH * Init::NUMBER_BLOCS_HEIGHT; i++)
 	{
@@ -95,6 +100,10 @@ const bool Level::GetNewStatus() const
 	return myNewStatus;
 }
 
+const Vector2f & Level::GetDoorPos() const
+{
+	return myDoorPos;
+}
 
 //############ Private Functions ############
 string Level::Read(ifstream &file)

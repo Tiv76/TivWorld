@@ -21,19 +21,29 @@ void ExitManager::PositionTest()
 		myLevel = Level(myLevel.GetNLevel() + 1);
 		myCharacter.SetPosition(Vector2f(25, posY));
 	}
-	if (mapAttributs[tileMap[nTile]] == "left")
+	else if (mapAttributs[tileMap[nTile]] == "left")
 	{
 		myLevel = Level(myLevel.GetNLevel() - 1);
 		myCharacter.SetPosition(Vector2f(750, posY));
 	}
-	if (mapAttributs[tileMap[nTile]] == "up")
+	else if (mapAttributs[tileMap[nTile]] == "up")
 	{
 		myLevel = Level(myLevel.GetNLevel() - 10);
 		myCharacter.SetPosition(Vector2f(posX, 450));
 	}
-	if (mapAttributs[tileMap[nTile]] == "down")
+	else if (mapAttributs[tileMap[nTile]] == "down")
 	{
 		myLevel = Level(myLevel.GetNLevel() + 10);
 		myCharacter.SetPosition(Vector2f(posX, 20));
+	}
+	else if (mapAttributs[tileMap[nTile]] == "hIn")
+	{
+		myLevel = Level(myLevel.GetNLevel() + 10000);
+		myCharacter.SetPosition(myLevel.GetDoorPos());
+	}
+	else if (mapAttributs[tileMap[nTile]] == "hOut")
+	{
+		myLevel = Level(myLevel.GetNLevel() - 10000);
+		myCharacter.SetPosition(myLevel.GetDoorPos());
 	}
 }
