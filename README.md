@@ -18,6 +18,7 @@ Few explainations...
       + Robot1 700 100 (1 to 4 lines) are the type of hostile, its X and Y positions
       + pictures/tileset.bmp is the path of the tileset to draw the map
       + tile0 grass tile1 grass tile2 rock... are the attributs of each tile opf the tileset
+      + 385 275 are the X and Y coords to place the main character when enter/exit house (0 0 when no door on the map)
       + the few last lines are the tilemap
 
 So I'm opened to all the help you can give me to continue my game, to have better knowledge in C++, to have a better organization for my code, to show me things I forgot...
